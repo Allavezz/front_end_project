@@ -1,0 +1,34 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+
+
+
+// Section padding
+.section-padding {
+	padding: 5rem 1rem 7rem;
+
+	@include respond(sm) {
+		padding: 5rem 2rem 7rem;
+	}
+
+	@include respond(md) {
+		padding: 5rem 3rem 7rem;
+	}
+}
+
+// Heading padding
+.heading {
+	margin-bottom: 4rem;
+}
+
+
+// Buttons Arrow Icons
+.arrow-right {
+	font-size: 14px;
+	margin-left: 1rem;
+}
+.arrow-left {
+	font-size: 14px;
+	margin-right: 1rem;
+}

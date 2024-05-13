@@ -1,0 +1,27 @@
+@use '../../abstrats' as *;
+
+.events-intro {
+	background-color: var(--black2);
+	padding-bottom: 0;
+
+	&__heading {
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__title {
+		color: var(--white);
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		color: var(--text);
+
+		&:first-of-type {
+			margin-bottom: 1rem;
+		}
+	}
+}

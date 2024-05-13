@@ -1,0 +1,84 @@
+@use '../abstrats' as *;
+
+.event-card {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	border: 1px solid var(--white);
+	flex-direction: column;
+	align-items: start;
+	position: relative;
+	transition: all 0.3s ease;
+
+	
+
+	&:hover {
+		transform: scale(1.05);
+
+		h4 {
+			background-image: var(--gradient-brand--hover);
+		}
+	}
+
+	&__image-wrapper {
+		width: 100%;
+		height: 100%;
+
+		&--gradient-black {
+			&::after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: var(--gradient-event-black);
+			}
+		}
+
+		&--gradient-grey {
+			&::after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-image: var(--gradient-event-grey);
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__content {
+		position: absolute;
+		bottom: -14%;
+		padding: 2rem 2rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		h4 {
+			background-image: var(--gradient-brand);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			z-index: 2;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			color: var(--default-white);
+			z-index: 2;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__btn {
+		z-index: 2;
+	}
+}
