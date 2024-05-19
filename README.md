@@ -18,7 +18,7 @@ This is my frontend project for the Full Stack Web development course that I'm t
 ## Usage
 
 Here are the steps to start this project.
-This project uses JSON-Server for a mock backend.
+This project uses Vite, React, and a JSON-Server for a mock backend.
 
 Clone or Download this repository to start.
 
