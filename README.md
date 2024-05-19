@@ -31,6 +31,8 @@ The server will run on http://localhost:5000
 
 ### Run Vite Frontend
 
+The App will run on http://localhost:3000
+
 `npm run dev `
 
 ## Overview
