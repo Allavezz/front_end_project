@@ -6,7 +6,7 @@ This is my frontend project for the Full Stack Web development course that I'm t
 
 - [Usage](#usage) -[Install Depencencies](#install-dependencies) -[Run JSON server](#run-json-server) -[Run Vite Frontend](#run-vite-frontend)
 - [Overview](#overview)
-  - [Context] (#context)
+  - [Context](#context)
   - [The challenge](#the-challenge)
   - [The solution](#the-solution) -[Screenshot](#screenshot)
 - [Process](#process) -[Built with](#built-with) -[Technics and Tools](#technics-and-tools)
@@ -26,6 +26,7 @@ Clone or Download this repository to start.
 ### Run JSON server
 
 The server will run on http://localhost:5000
+
 `npm run server`
 
 ### Run Vite Frontend
