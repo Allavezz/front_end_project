@@ -75,7 +75,7 @@
     },
     {
       "id": "participants",
-      "number": "4.720",
+      "number": "1.704",
       "text": "Unique participants"
     },
     {
@@ -84,73 +84,97 @@
       "text": "Blog Articles"
     }
   ],
-  "perks": [
-    {
-      "id": "home-events-01",
-      "title": "Lorem ipsum dolor sit:",
-      "text": {
-        "p1": "Lorem ipsum dolor sit amet.",
-        "p2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum.",
-        "p3": "Lorem ipsum dolor sit.",
-        "p4": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      }
-    },
-    {
-      "id": "home-events-02",
-      "title": "Lorem ipsum dolor sit:",
-      "text": {
-        "p1": "Lorem ipsum dolor sit amet.",
-        "p2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum.",
-        "p3": "Lorem ipsum dolor sit.",
-        "p4": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      }
-    },
-    {
-      "id": "home-events-03",
-      "title": "Lorem ipsum dolor sit:",
-      "text": {
-        "p1": "Lorem ipsum dolor sit amet.",
-        "p2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum.",
-        "p3": "Lorem ipsum dolor sit.",
-        "p4": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      }
-    },
-    {
-      "id": "home-events-04",
-      "title": "Lorem ipsum dolor sit:",
-      "text": {
-        "p1": "Lorem ipsum dolor sit amet.",
-        "p2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum.",
-        "p3": "Lorem ipsum dolor sit.",
-        "p4": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      }
-    }
-  ],
   "events": [
     {
       "id": "Norway",
-      "title": "Lorem ipsum dolor sit amet",
+      "title": "Lorem Norway dolor sit amet",
       "capital": "Oslo",
       "hero": "/assets/next-events/norwayHero.jpg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "image": "/assets/next-events/Event01.jpg"
+      "cardtext": "Lorem Norway dolor sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "image": "/assets/next-events/EventNorway01.jpg",
+      "imagename": "Atlantic Road",
+      "image2": "/assets/next-events/EventNorway02.jpg",
+      "imagename2": "Hamnøy",
+      "image3": "/assets/next-events/EventNorway03.jpg",
+      "imagename3": "Hardangerfjord",
+      "image4": "/assets/next-events/EventNorway04.jpg",
+      "imagename4": "Alesund",
+      "image5": "/assets/next-events/EventNorway05.jpg",
+      "imagename5": "Trollstigen",
+      "image6": "/assets/next-events/EventNorway06.jpg",
+      "imagename6": "Jotunheimen",
+      "location1": "",
+      "location2": "",
+      "location3": "",
+      "location4": "",
+      "location5": "",
+      "location6": "",
+      "date": "12/03/2025, 9am West - 17/03/2025, 02pm West",
+      "reference": "Jan 12, 2025, 09:00:00",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d128083.37576987327!2d10.62031270208105!3d59.89392432010753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2sOslo%2C%20Noruega!5e0!3m2!1spt-PT!2spt!4v1715903716973!5m2!1spt-PT!2spt",
+      "latitude": "59.9133301",
+      "longitude": "10.7389701"
     },
     {
-      "id": "Iceland",
-      "title": "Lorem ipsum dolor sit amet",
-      "capital": "Reykjavik",
-      "hero": "/assets/next-events/icelandHero.jpg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "image": "/assets/next-events/Event02.jpg"
-    },
+			"id": "Iceland",
+			"title": "Lorem ipsum Iceland sit amet",
+			"capital": "Reykjavik",
+			"hero": "/assets/next-events/icelandHero.jpg",
+			"cardtext": "Lorem ipsum Iceland sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"image": "/assets/next-events/EventIceland01.jpg",
+			"imagename": "Þingvellir National Park",
+			"image2": "/assets/next-events/EventIceland02.jpg",
+			"imagename2": "Blue Lagoon",
+			"image3": "/assets/next-events/EventIceland03.jpg",
+			"imagename3": "Reynisfjara Beach",
+			"image4": "/assets/next-events/EventIceland04.jpg",
+			"imagename4": "Mývatn Area",
+			"image5": "/assets/next-events/EventIceland05.jpg",
+			"imagename5": "Seljalandsfoss falls",
+			"image6": "/assets/next-events/EventIceland06.jpg",
+			"imagename6": "Hekla Vulcano",
+			"location1": "",
+			"location2": "",
+			"location3": "",
+			"location4": "",
+			"location5": "",
+			"location6": "",
+			"date": "02/06/2025, 09am WEST - 06/06/2025, 02pm WEST",
+			"reference": "Apr 2, 2025, 09:00:00",
+			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55701.06788753379!2d-21.93484179816134!3d64.13354198342563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674b9eedcedc3%3A0xec912ca230d26071!2sReykjavik%2C%20Isl%C3%A2ndia!5e0!3m2!1spt-PT!2spt!4v1715908749728!5m2!1spt-PT!2spt",
+			"latitude": "64.145981",
+			"longitude": "-21.9422367"
+		},
     {
-      "id": "Portugal",
-      "title": "Lorem ipsum dolor sit amet",
-      "capital": "Lisboa",
-      "hero": "/assets/next-events/portugalHero.jpg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "image": "/assets/next-events/Event03.jpg"
-    }
+			"id": "Portugal",
+			"title": "Portugal ipsum dolor sit amet",
+			"capital": "Lisbon",
+			"hero": "/assets/next-events/portugalHero.jpg",
+			"cardtext": "Portugal ipsum dolor sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"image": "/assets/next-events/EventPortugal01.jpg",
+			"imagename": "Algarve Coast",
+			"image2": "/assets/next-events/EventPortugal02.jpg",
+			"imagename2": "Cabo da Roca",
+			"image3": "/assets/next-events/EventPortugal03.jpg",
+			"imagename3": "Gerês",
+			"image4": "/assets/next-events/EventPortugal04.jpg",
+			"imagename4": "Serra da Estrela",
+			"image5": "/assets/next-events/EventPortugal05.jpg",
+			"imagename5": "Mata do Bussaco",
+			"image6": "/assets/next-events/EventPortugal06.jpg",
+			"imagename6": "Sintra",
+			"location1": "",
+			"location2": "",
+			"location3": "",
+			"location4": "",
+			"location5": "",
+			"location6": "",
+			"date": "27/08/2025, 9am West - 02/09/2025, 02pm West",
+			"reference": "Jun 27, 2025, 09:00:00",
+			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49789.64536424122!2d-9.20093537548756!3d38.74413916445521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1715903631668!5m2!1spt-PT!2spt",
+			"latitude": "59.9133301",
+			"longitude": "10.7389701"
+		}
   ],
   "testimonials": [
     {
@@ -158,28 +182,28 @@
       "name": "John Doe",
       "image": "https://randomuser.me/api/portraits/men/1.jpg",
       "bike": "Ktm 990",
-      "text": "'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit'"
+      "text": "'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit'"
     },
     {
       "id": "02",
       "name": "Jane Doe",
       "image": "https://randomuser.me/api/portraits/women/1.jpg",
       "bike": "Tenere 700 Rally",
-      "text": "'Lorem ipsum dolor sit amet consectetur natus nemo et eligendiadipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit'"
+      "text": "'Lorem ipsum dolor sit amet consectetur natus nemo et eligendiadipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit'"
     },
     {
       "id": "03",
       "name": "John Doe",
       "image": "https://randomuser.me/api/portraits/men/2.jpg",
       "bike": "Ducati Desert X",
-      "text": "'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nulla numquam inciduntodit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit'"
+      "text": "'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla numquam inciduntodit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit'"
     },
     {
       "id": "04",
       "name": "Jane Doe",
       "image": "https://randomuser.me/api/portraits/women/2.jpg",
       "bike": "Honda CRF300 Rally",
-      "text": "'Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit'"
+      "text": "'Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit'"
     }
   ],
   "faq": [
@@ -191,7 +215,7 @@
     {
       "id": "02",
       "question": "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-      "answer": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, earum excepturi necessitatibus nemo est minima alias sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, odit.Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "answer": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, earum excepturi necessitatibus nemo est minima alias sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit.Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
       "id": "03",
@@ -638,15 +662,27 @@
       "date": "April 27, 2024"
     },
     {
-      "id": "4f8d",
-      "background": "/assets/about/aboutHero.jpg",
+      "id": "4329",
+      "background": "/assets/blog/blogHero.jpg",
       "image": "/assets/blog-articles/blogArticle01.jpg",
-      "topic": "events",
-      "title": "Mohab 7 Days Expedition",
-      "text": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores",
-      "text2": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores",
+      "topic": "places",
+      "title": "Blog Post number 50",
+      "text": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!",
+      "text2": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!",
       "picture": "/assets/team/teamMember03.jpg",
       "name": "Julia Chase",
+      "date": "May 7, 2024"
+    },
+    {
+      "id": "a041",
+      "background": "/assets/blog/blogHero.jpg",
+      "image": "/assets/blog-articles/blogArticle02.jpg",
+      "topic": "places",
+      "title": "Blog Post Number 99",
+      "text": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!",
+      "text2": "Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!Dignissimos aliquam obcaecati nesciunt quod eveniet maiores! Impedit veniam eos reiciendis in aliquam, dolores doloribus modi ipsa. Dignissimos aliquam obcaecati nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis animi quasi est voluptatum ipsam, possimus illo deserunt reprehenderit consequuntur dolor. Culpa veniam deleniti, quibusdam, nihil molestiae illo repellendus nostrum at qui eum adipisci quam voluptas! Dolorem ducimus ea aut vero veniam, neque minus? Dolores dignissimos eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam facere soluta delectus cum possimus dignissimos, natus placeat perspiciatis deserunt accusantium. harum ipsam ab. eveniet maiores!",
+      "picture": "/assets/team/teamMember06.jpg",
+      "name": "Dave Olsen",
       "date": "May 6, 2024"
     }
   ]

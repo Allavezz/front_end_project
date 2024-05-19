@@ -15,9 +15,9 @@
 	&:hover {
 		transform: scale(1.05);
 
-		& .team-card__name {
+		/* & .team-card__name {
 			background-image: var(--gradient-brand--hover);
-		}
+		} */
 	}
 
 	&__image-wrapper {
@@ -32,10 +32,11 @@
 	}
 
 	&__name {
-		background-image: var(--gradient-brand);
+		color: var(--brand);
+		/* background-color: var(--brand);
 		-webkit-background-clip: text;
 		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		-webkit-text-fill-color: transparent; */
 		
 	}
 

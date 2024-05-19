@@ -2,8 +2,10 @@ import BlogCard from '../../components/BlogCard';
 import Spinner from '../../components/Spinner';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 
 const BlogPosts = () => {
+	const { ref, inView } = useInView({ triggerOnce: true });
 	const [posts, setPosts] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [selectedTopic, setSelectedTopic] = useState('all'); // Default selected topic
@@ -49,20 +51,10 @@ const BlogPosts = () => {
 	}
 
 	return (
-		<section className='blog-posts section-padding'>
-			<div className='blog-posts__heading heading'>
-				<h2 className='blog-posts__title title'>Our blog</h2>
-				<p className='blog-posts__text text'>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus, aliquam quisquam rem neque in, soluta ea eligendi nihil sit eveniet dolorum fugit fugiat ullam assumenda nam ipsum!
-				</p>
-				<p className='blog-posts__text text'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio nisi pariatur! Quod, officia quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
-			</div>
-
+		<section ref={ref} className='blog-posts section-padding'>
 			<div className='blog-posts__container'>
 				<div className='blog-posts__buttons-container'>
-					<div className='blog-posts__filter'>
+					<div className={`blog-posts__filter tran-top1 ${inView ? 'tran-topd' : ''}`}>
 						<button className={`btn btn--med btn--filter blog-posts__filter-button ${selectedTopic === 'all' ? 'active' : ''}`} onClick={() => handleFilter('all')}>
 							All
 						</button>
@@ -72,19 +64,19 @@ const BlogPosts = () => {
 							</button>
 						))}
 					</div>
-					<div>
+					<div className={`tran-top2 ${inView ? 'tran-topd' : ''}`}>
 						<Link to='/add-post' className='blog-posts__add-post btn btn--med'>
 							Create post
 						</Link>
 					</div>
 				</div>
 
-				<div className='blog-posts__page'>
+				<div className={`blog-posts__page tran-top3 ${inView ? 'tran-topd' : ''}`}>
 					{reversedPosts.slice(currentPage * 9, (currentPage + 1) * 9).map(post => (
 						<BlogCard key={post.id} id={post.id} image={post.image} topic={post.topic} title={post.title} text={post.text} picture={post.picture} name={post.name} date={post.date} />
 					))}
 				</div>
-				<div className='blog-posts__navigation'>
+				<div className={`blog-posts__navigation tran-top4 ${inView ? 'tran-topd' : ''}`}>
 					<div className='blog-posts__arrows'>
 						<button onClick={prevPage}>&#10094;</button>
 					</div>

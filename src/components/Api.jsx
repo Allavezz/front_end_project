@@ -1,3 +1,6 @@
+
+// Work in progress. Component not in use!!
+
 const API_URL = 'http://localhost:5000';
 
 // Get post data
@@ -6,7 +9,6 @@ export const getBlogPosts = async () => {
 	if (!response.ok) throw new Error('Error fetching posts');
 	return await response.json();
 };
-
 
 // Add post data
 export const addBlogPost = async blogPost => {
@@ -33,7 +35,7 @@ export const updateBlogPost = async blogPost => {
 	return updatedBlogPost;
 };
 
-// Delete Post data
+// Delete Post data!
 export const deleteBlogPost = async id => {
 	const response = await fetch(API_URL + '/blogPost' + id, {
 		method: 'DELETE',

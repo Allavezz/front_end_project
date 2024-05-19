@@ -1,3 +1,6 @@
+
+// Work in progress. Component not in use!!
+
 import { createContext, useContext, useState, useEffect } from 'react';
 import { getBlogPosts, addBlogPost, updateBlogPost, deleteBlogPost } from '../components/Api';
 

@@ -42,9 +42,9 @@
 	&__step-number {
 		color: var(--white);
 		position: relative;
-		font-size: 1.25rem;
+		font-size: 1rem;
 		font-weight: 600;
-		padding: 1.5rem;
+		padding: 1rem;
 		background-color: var(--grey2);
 		border: 1px solid var(--white);
 		border-radius: 50%;
@@ -52,8 +52,12 @@
 		justify-content: center;
 		align-items: center;
 
+		@include respond(ss) {
+			font-size: 1.25rem;
+			padding: 1.5rem;
+		}
+
 		span {
-			
 			position: absolute;
 			margin: 0 auto;
 		}
@@ -61,6 +65,10 @@
 
 	&__step-text {
 		color: var(--text);
+		font-size: 1rem;
+		@include respond(ss) {
+			font-size: 1.25rem;
+		}
 	}
 
 	&__faq {

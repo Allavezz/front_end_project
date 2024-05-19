@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { testimonials } from '../../data/data.json';
+import { useInView } from 'react-intersection-observer';
 
 const HomeTestimonials = () => {
+	const { ref, inView } = useInView({ triggerOnce: true });
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	useEffect(() => {
@@ -28,8 +30,8 @@ const HomeTestimonials = () => {
 	};
 
 	return (
-		<section className='home-testimonials section-padding'>
-			<div className='home-testimonials__container'>
+		<section ref={ref} className='home-testimonials section-padding'>
+			<div className={`home-testimonials__container tran-top2 ${inView ? 'tran-topd' : ' '}`}>
 				<h2 className='home-testimonials__title title '>Testimonials</h2>
 				{testimonials.map((testimonial, index) => (
 					<div key={testimonial.id} className={`home-testimonials__slide ${index === currentSlide ? 'home-testimonials__active' : ''}`}>
