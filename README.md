@@ -55,7 +55,7 @@ Requirements for the project:
 - Good HTML semantics and CSS styling.
 - Implement a route system.
 - A simple form with validation.
-- Implementation of a state management is a plus but not mandatory
+- Implementation of a state management is a plus but not mandatory.
   
 
 ### The challenge
