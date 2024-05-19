@@ -55,12 +55,12 @@ Requirements for the project:
 - Good HTML semantics and CSS styling.
 - Implement a route system.
 - A simple form with validation.
-- Its a plus to implement a state managment but not mandatory
+- Implementation of a state management is a plus but not mandatory
   
 
 ### The challenge
 
-The client its a company that organize motorcycle events around the globe.
+The client is a company that organize motorcycle events around the globe.
 The request is to build a platform where potential users can learn about the company, the team, about the packages available to purchase, the events available to entry, and also to be a platform where the company can publish post about the previous events and articles about the motorcycle adventure world.
 The platform has to be modern and pleasant to the majority of the profiles.
 
