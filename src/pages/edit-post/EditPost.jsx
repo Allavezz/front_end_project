@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useOutletContext } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Spinner from '../../components/Spinner';
+import { useInView } from 'react-intersection-observer';
 
 const EditPost = ({ updatePostSubmit }) => {
+	const { ref, inView } = useInView({ triggerOnce: true });
 	const navigate = useNavigate();
 	const { blogPostId } = useParams();
 	const [post, setPost] = useState(null);
@@ -78,17 +80,17 @@ const EditPost = ({ updatePostSubmit }) => {
 	const isImage = useOutletContext();
 
 	return (
-		<main className='edit-post'>
+		<main ref={ref} className='edit-post'>
 			<section className={`edit-post__hero ${background ? '' : 'black-background'}`} style={{ backgroundImage: `var(--gradient-hero--grey), url(${background})` }}>
 				<div className='edit-post__heading heading'>
-					<h1 className='title'>
+					<h1 className={`title tran-top1 ${inView ? 'tran-topd' : ''}`}>
 						{`${title ? '' : 'Edit your Post !'}`}
 						{title}
 					</h1>
 				</div>
 			</section>
 			<section className='edit-post__form-section section-padding'>
-				<div className='edit-post__form-container'>
+				<div className={`edit-post__form-container tran-top2 ${inView ? 'tran-topd' : ''}`}>
 					<form className='edit-post__form' onSubmit={submitForm}>
 						<div className='edit-post__form-logo'>
 							<img className='edit-post__logo' src={isImage ? logoBlack : logoWhite} alt='logo' />
@@ -100,16 +102,9 @@ const EditPost = ({ updatePostSubmit }) => {
 							<label className=' edit-post__label text' htmlFor='background'>
 								Background:
 							</label>
-							<input
-								className='edit-post__input'
-								value={background}
-								onChange={event => setBackground(event.target.value)}
-								type='text'
-								id='background'
-								name='background'
-								placeholder='Post background image...'
-								required
-							/>
+							<select className='edit-post__input' value={background} onChange={event => setBackground(event.target.value)} id='background' name='background' required>
+								<option value='/assets/blog/blogHero.jpg'>background image 1</option>
+							</select>
 						</div>
 
 						<div className='edit-post__form-field'>
@@ -136,7 +131,12 @@ const EditPost = ({ updatePostSubmit }) => {
 							<label className=' edit-post__label text' htmlFor='image'>
 								Image:
 							</label>
-							<input className='edit-post__input' value={image} onChange={event => setImage(event.target.value)} type='text' id='image' name='image' placeholder='Enter the image URL...' />
+							<select className='edit-post__input' value={image} onChange={event => setImage(event.target.value)} name='image' id='image' required>
+								<option value='/assets/blog-articles/blogArticle01.jpg'>image 1</option>
+								<option value='/assets/blog-articles/blogArticle02.jpg'>image 2</option>
+								<option value='/assets/blog-articles/blogArticle03.jpg'>image 3</option>
+								<option value='/assets/blog-articles/blogArticle04.jpg'>image 4</option>
+							</select>
 						</div>
 
 						<div className='edit-post__form-field'>
@@ -206,7 +206,7 @@ const EditPost = ({ updatePostSubmit }) => {
 						</div>
 					</form>
 				</div>
-				<div className='edit-post__back'>
+				<div className={`edit-post__back tran-top3 ${inView ? 'tran-topd' : ''}`}>
 					<button onClick={() => navigate(-1)} className=' btn btn--med'>
 						Back
 					</button>

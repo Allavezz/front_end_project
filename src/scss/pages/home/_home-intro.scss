@@ -27,9 +27,8 @@
 		max-width: 75%;
 		height: 600px;
 		margin: 0 auto;
-
+		display: flex;
 		
-
 		&::before {
 			content: '';
 			position: absolute;
@@ -71,10 +70,16 @@
 	&__title {
 		color: var(--white);
 		margin-bottom: 2rem;
+		
+
 	}
 
 	&__text {
 		color: var(--text);
 		margin-bottom: 1rem;
+	}
+
+	&__stats {
+		width: 100%;
 	}
 }

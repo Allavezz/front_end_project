@@ -6,6 +6,7 @@
 	height: 100%;
 	border: 1px solid var(--white);
 	display: flex;
+	flex-direction: column;
 
 	&__hover {
 		&:hover {
@@ -13,10 +14,7 @@
 		}
 	}
 
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-	}
+	
 
 	&__image-wrapper {
 		display: flex;
@@ -62,7 +60,7 @@
 	&__text {
 		color: var(--text);
 		display: -webkit-box;
-		-webkit-line-clamp: 2;
+		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;

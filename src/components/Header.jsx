@@ -1,13 +1,15 @@
 import bannerWhite from '/assets/bannerWhite.png';
 import bannerBlack from '/assets/bannerBlack.png';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { navLinks } from '../data/data.json';
 import Toggle from './Toggle';
 
 const Header = ({ handleChange, isChecked, isImage }) => {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [toggle, setToggle] = useState(false);
+	const location = useLocation();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -23,9 +25,14 @@ const Header = ({ handleChange, isChecked, isImage }) => {
 		};
 	}, []);
 
-	const [toggle, settoggle] = useState(false);
+	useEffect(() => {
+		// Close mobile menu when navigating to a new page
+		setToggle(false);
+	}, [location.pathname]);
 
-	
+	const toggleMenu = () => {
+		setToggle(prev => !prev);
+	};
 
 	return (
 		<header className={`header ${isScrolled ? 'header--opaque' : 'header--transparent'}`}>
@@ -48,7 +55,7 @@ const Header = ({ handleChange, isChecked, isImage }) => {
 						))}
 					</ul>
 
-					<div onClick={() => settoggle(prev => !prev)} className='header__toggle-menu'>
+					<div onClick={toggleMenu} className='header__toggle-menu'>
 						{toggle ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
 					</div>
 
@@ -61,7 +68,7 @@ const Header = ({ handleChange, isChecked, isImage }) => {
 					>
 						{navLinks.map((nav, index) => (
 							<li className='header__mobile-link' key={nav.id}>
-								<NavLink to={nav.link} className={({ isActive }) => (isActive ? 'active' : '')}>
+								<NavLink to={nav.link} className={({ isActive }) => (isActive ? 'active' : '')} onClick={toggleMenu}>
 									{nav.title}
 								</NavLink>
 							</li>

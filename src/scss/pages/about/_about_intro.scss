@@ -71,8 +71,19 @@
 		}
 	}
 
+	&__bottom {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__bottom-text {
+		
 		color: var(--text);
 		margin-bottom: 4rem;
+	}
+
+	&__stats {
+		max-width: 1200px;
 	}
 }

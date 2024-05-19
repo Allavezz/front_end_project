@@ -3,12 +3,13 @@ import logoBlack from '/assets/logoBlack.png';
 import { useState } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { useBlogPosts } from '../../context/BlogPostContext';
+import { useInView } from 'react-intersection-observer';
 
 const AddPost = ({ addPostSubmit }) => {
-	const [background, setBackground] = useState('');
+	const { ref, inView } = useInView({ triggerOnce: true });
+	const [background, setBackground] = useState('/assets/blog/blogHero.jpg');
 	const [title, setTitle] = useState('');
-	const [image, setImage] = useState('');
+	const [image, setImage] = useState('/assets/blog-articles/blogArticle01.jpg');
 	const [topic, setTopic] = useState('events');
 	const [text, setText] = useState('');
 	const [text2, setText2] = useState('');
@@ -17,12 +18,11 @@ const AddPost = ({ addPostSubmit }) => {
 	const [date, setDate] = useState('');
 
 	const navigate = useNavigate();
-	const { handleAdd } = useBlogPosts();
 
 	const submitForm = event => {
 		event.preventDefault();
 
-		const blogPost = {
+		const newPost = {
 			background,
 			image,
 			topic,
@@ -44,17 +44,17 @@ const AddPost = ({ addPostSubmit }) => {
 	const isImage = useOutletContext();
 
 	return (
-		<main className='add-post'>
+		<main ref={ref} className='add-post'>
 			<section className={`add-post__hero ${background ? '' : 'black-background'}`} style={{ backgroundImage: `var(--gradient-hero--grey), url(${background})` }}>
 				<div className='add-post__heading heading'>
-					<h1 className='title'>
+					<h1 className={`title tran-top1 ${inView ? 'tran-topd' : ''}`}>
 						{`${title ? '' : 'Create your Post !'}`}
 						{title}
 					</h1>
 				</div>
 			</section>
 			<section className='add-post__form-section section-padding'>
-				<div className='add-post__form-container'>
+				<div className={`add-post__form-container tran-top2 ${inView ? 'tran-topd' : ''}`}>
 					<form className='add-post__form' onSubmit={submitForm}>
 						<div className='add-post__form-logo'>
 							<img className='add-post__logo' src={isImage ? logoBlack : logoWhite} alt='logo' />
@@ -66,16 +66,9 @@ const AddPost = ({ addPostSubmit }) => {
 							<label className=' add-post__label text' htmlFor='background'>
 								Background:
 							</label>
-							<input
-								className='add-post__input'
-								value={background}
-								onChange={event => setBackground(event.target.value)}
-								type='text'
-								id='background'
-								name='background'
-								placeholder='Post background image...'
-								required
-							/>
+							<select className='add-post__input' value={background} onChange={event => setBackground(event.target.value)} id='background' name='background' required>
+								<option value='/assets/blog/blogHero.jpg'>background image 1</option>
+							</select>
 						</div>
 
 						<div className='add-post__form-field'>
@@ -102,7 +95,13 @@ const AddPost = ({ addPostSubmit }) => {
 							<label className=' add-post__label text' htmlFor='image'>
 								Image:
 							</label>
-							<input className='add-post__input' value={image} onChange={event => setImage(event.target.value)} type='text' id='image' name='image' placeholder='Enter the image URL...' />
+
+							<select className='add-post__input' value={image} onChange={event => setImage(event.target.value)} name='image' id='image' required>
+								<option value='/assets/blog-articles/blogArticle01.jpg'>image 1</option>
+								<option value='/assets/blog-articles/blogArticle02.jpg'>image 2</option>
+								<option value='/assets/blog-articles/blogArticle03.jpg'>image 3</option>
+								<option value='/assets/blog-articles/blogArticle04.jpg'>image 4</option>
+							</select>
 						</div>
 
 						<div className='add-post__form-field'>
@@ -172,7 +171,7 @@ const AddPost = ({ addPostSubmit }) => {
 						</div>
 					</form>
 				</div>
-				<div className='add-post__back'>
+				<div className={`add-post__back tran-top3 ${inView ? 'tran-topd' : ''}`}>
 					<button onClick={() => navigate(-1)} className=' btn btn--med'>
 						Back
 					</button>

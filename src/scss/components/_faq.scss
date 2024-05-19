@@ -25,6 +25,10 @@
 		gap: 1rem;
 		align-items: center;
 		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		@include respond(ss) {
+			font-size: 1.25rem;
+		}
 
 		&:hover {
 			cursor: pointer;
