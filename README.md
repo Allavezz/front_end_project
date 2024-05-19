@@ -4,7 +4,10 @@ This is my frontend project for the Full Stack Web development course that I'm t
 
 ## Table of contents
 
-- [Usage](#usage) -[Install Depencencies](#install-dependencies) -[Run JSON server](#run-json-server) -[Run Vite Frontend](#run-vite-frontend)
+- [Usage](#usage)
+  -[Install Depencencies](#install-dependencies)
+  -[Run JSON server](#run-json-server)
+  -[Run Vite Frontend](#run-vite-frontend)
 - [Overview](#overview)
   - [Context](#context)
   - [The challenge](#the-challenge)
@@ -19,9 +22,11 @@ This project uses JSON-Server for a mock backend.
 
 Clone or Download this repository to start.
 
+
 ### Install Dependencies
 
 `npm install`
+
 
 ### Run JSON server
 
@@ -29,13 +34,16 @@ The server will run on http://localhost:5000
 
 `npm run server`
 
+
 ### Run Vite Frontend
 
 The App will run on http://localhost:3000
 
 `npm run dev `
 
+
 ## Overview
+
 
 ### Context
 
@@ -51,12 +59,14 @@ Requirements for the project:
 - Implement a route system.
 - A simple form with validation.
 - Its a plus to implement a state managment but not mandatory
+  
 
 ### The challenge
 
 The client its a company that organize motorcycle events around the globe.
 The request is to build a platform where potential users can learn about the company, the team, about the packages available to purchase, the events available to entry, and also to be a platform where the company can publish post about the previous events and articles about the motorcycle adventure world.
 The platform has to be modern and pleasant to the majority of the profiles.
+
 
 ### The solution
 
@@ -73,6 +83,7 @@ A react multipage application with:
 - Contact page: Contain steps on how to entry in a event, and a FAQ section with the most common questions. It also contains a grid with images, acting as a final CTA before the contact form.
 
 - Added features like Dark/Light theme, outlets, sliders, accordions, animations and more to make the platform modern and pleasant to everybody.
+  
 
 ### Screenhot
 
@@ -87,9 +98,9 @@ A react multipage application with:
 - Javascript
 - Sass
 - React
+  
 
 Some Dependencies
-
 - React Icons
 - React Spinners
 - Framer Motion
@@ -97,10 +108,13 @@ Some Dependencies
 - React Hook Form
 - React Toastify
 - Yup
+  
 
 ### Technics and tools
 
+
 Here are some of the technics and tools used in this project
+
 
 Slider and carousel:
 
@@ -108,28 +122,34 @@ Slider and carousel:
   - Stats Carousel: pure CSS.
   - Blog carousel in homepage: Swiper library.
   - Home hero slider: JavaScript and Css.
+    
 
 FAQ Accordion:
 
 - Framer Motion library.
+  
 
 Weather Report in Event capital
 
 - Use of external OpenWeather API.
+  
 
 Blog CRUD:
 
 - Use a dummy API with JSON server to get, add, update, and delete blog posts.
+  
 
 Form with validation:
 
 - Use of Hook Form and Yup.
+  
 
 "Dropdowns" on click:
 
 - For this challenge, also different approachs were used.
   - Packs "dropdown": useState and UseEffect.
   - Event "dropdown": use of an outlet component to render the Event page.
+    
 
 Routes:
 
@@ -139,10 +159,13 @@ Routes:
   - createRoutesFromElements
   - RouterProvider
 
+
 Some react hooks were used in the project.
 In the majory of cases, from changing images displayed, toggling color themes, to scroll to top on page change, or triggering of transitions, useState and/or useEffect were used.
 
+
 ## Improvements and Future
+
 
 Improvements:
 
@@ -151,6 +174,7 @@ Improvements:
 - Use backend to feed the entire applications
 - Add cookies, privacy, packs and events purchase and payment.
 - Better and more advanced design, CSS and JavaScript.
+  
 
 Future:
 
