@@ -61,8 +61,8 @@ Requirements for the project:
 ### The challenge
 
 The client is a company that organize motorcycle events around the globe.
-The request is to build a platform where potential users can learn about the company, the team, about the packages available to purchase, the events available to entry, and also to be a platform where the company can publish post about the previous events and articles about the motorcycle adventure world.
-The platform has to be modern and pleasant to the majority of the profiles.
+The request is to build a platform where potential users can learn about the company, the team, about the packages available to purchase, the events available to entry, and also to be a platform where the company can publish posts about the previous events and articles about the motorcycle adventure world.
+The platform has to be modern and pleasant to the majority of the users.
 
 
 ### The solution
@@ -78,6 +78,8 @@ A react multipage application with:
 - Blog page: Containes and introduction about the blog as the content, and a section with all the posts. Each post has navigation to target page, where the user can read about the content.
 
 - Contact page: Contain steps on how to entry in a event, and a FAQ section with the most common questions. It also contains a grid with images, acting as a final CTA before the contact form.
+
+- A section in the bottom of each page with a contact form.
 
 - Added features like Dark/Light theme, outlets, sliders, accordions, animations and more to make the platform modern and pleasant to everybody.
   
